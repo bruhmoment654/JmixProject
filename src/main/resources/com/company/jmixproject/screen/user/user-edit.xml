@@ -41,6 +41,7 @@
                 <textField id="emailField" property="email"/>
                 <comboBox id="timeZoneField" property="timeZoneId"/>
                 <checkBox id="activeField" property="active"/>
+                <textField id="addressField" property="address"/>
             </column>
         </form>
         <hbox id="editActions" spacing="true">

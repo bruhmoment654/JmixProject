@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.11.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1" author="JmixProject">
+        <dropForeignKeyConstraint baseTableName="DSHBRD_WIDGET_TEMPLATE"
+                                  constraintName="FK_DASHBOARD_WIDGETEMPL_GROUP"/>
+    </changeSet>
+    <changeSet id="2" author="JmixProject">
+        <dropForeignKeyConstraint baseTableName="DSHBRD_PERSISTENT_DASHBOARD"
+                                  constraintName="FK_PERSISTENT_DASHBOARD_GROUP"/>
+    </changeSet>
+    <changeSet id="3" author="JmixProject">
+        <dropTable cascadeConstraints="true" tableName="DSHBRD_DASHBOARD_GROUP"/>
+    </changeSet>
+    <changeSet id="4" author="JmixProject">
+        <dropTable cascadeConstraints="true" tableName="DSHBRD_PERSISTENT_DASHBOARD"/>
+    </changeSet>
+    <changeSet id="5" author="JmixProject">
+        <dropTable cascadeConstraints="true" tableName="DSHBRD_TEMPLATE_GROUP"/>
+    </changeSet>
+    <changeSet id="6" author="JmixProject">
+        <dropTable cascadeConstraints="true" tableName="DSHBRD_WIDGET_TEMPLATE"/>
+    </changeSet>
+</databaseChangeLog>

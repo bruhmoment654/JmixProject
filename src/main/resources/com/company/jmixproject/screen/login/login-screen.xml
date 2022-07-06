@@ -16,6 +16,17 @@
                   spacing="true"
                   stylename="jmix-login-panel"
                   width="AUTO">
+                <hbox id="loginTileBox"
+                      align="MIDDLE_CENTER"
+                      spacing="true"
+                      stylename="jmix-login-title">
+                    <image id="logo" height="60px" scaleMode="SCALE_DOWN">
+                        <resource>
+                            <classpath path="com/company/jmixproject/screen/login/logo.png"/>
+                        </resource>
+                    </image>
+
+                </hbox>
                 <label id="welcomeLabel"
                        align="MIDDLE_CENTER"
                        stylename="jmix-login-caption"
